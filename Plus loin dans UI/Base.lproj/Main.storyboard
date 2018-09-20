@@ -13,7 +13,7 @@
         <!--Item 2-->
         <scene sceneID="xRG-40-rik">
             <objects>
-                <viewController id="ct3-qE-5Os" sceneMemberID="viewController">
+                <viewController id="ct3-qE-5Os" customClass="ProgrammatiqueController" customModule="Plus_loin_dans_UI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dj9-gb-JmU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -33,10 +33,27 @@
                     <view key="view" contentMode="scaleToFill" id="cUU-j0-cIs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gDa-Jr-XQz">
+                                <rect key="frame" x="67" y="134" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="gCW-P6-zc5"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Tk8-V5-Utk" firstAttribute="trailing" secondItem="gDa-Jr-XQz" secondAttribute="trailing" constant="68" id="Qid-BD-siU"/>
+                            <constraint firstItem="gDa-Jr-XQz" firstAttribute="top" secondItem="Tk8-V5-Utk" secondAttribute="top" constant="90" id="hgF-nh-G77"/>
+                            <constraint firstItem="gDa-Jr-XQz" firstAttribute="leading" secondItem="Tk8-V5-Utk" secondAttribute="leading" constant="67" id="jgO-0j-YPQ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Tk8-V5-Utk"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="tTX-J4-wMa"/>
+                    <connections>
+                        <outlet property="vueFrameEtBounds" destination="gDa-Jr-XQz" id="JtR-eP-M0R"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vvq-QQ-HGU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

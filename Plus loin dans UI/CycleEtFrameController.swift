@@ -28,13 +28,9 @@ class CycleEtFrameController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         print("View did appear")
-        UIView.animate(withDuration: 2) {
-            self.vueFrameEtBounds.transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi) / 82)
-        }
-        
         UIView.animate(withDuration: 2, animations: {
             self.vueFrameEtBounds.transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi) / 82)
-        }) { (success) in
+        }) { (success)  in
             print("Frame -> : \(self.vueFrameEtBounds.frame)")
             print("Bounds -> : \(self.vueFrameEtBounds.bounds)")
         }
